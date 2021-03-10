@@ -1,0 +1,17 @@
+NAO Challange - Cobiat Team
+Omar Younis - omargallal.younis@studio.unibo.it
+Mattia Bertè - mattia.berte@studio.unibo.it
+
+-------------------------------------------------------------------------
+
+Necessary library: numpy
+
+In the python project:
+
+1) Open configuration.py and set the correct ip and port for nao.
+2) Launch main.py
+3) Enjoy it!
+
+
+search.py implements the search algorithm for planning postures sequence
+performer.py perform a given sequence of postures
