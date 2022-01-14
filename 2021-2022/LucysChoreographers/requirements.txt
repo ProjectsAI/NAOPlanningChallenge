@@ -1,0 +1,6 @@
+ipythonblocks==1.9.0
+networkx==2.2
+numpy==1.19.4
+sortedcontainers==2.3.0
+ipython==7.16.1
+python-vlc==3.0.11115
