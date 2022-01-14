@@ -1,0 +1,28 @@
+1 intro 
+Hi guys I'm Nicolò Donati and together with Riccardo Grassi we formed the WILL.A.I team
+
+2 slide 45 sec
+We obtained the available time by subtracting from the 3 minutes time limit the execution time of the mandatory moves.
+Then divided it in smaller equal intervals and assigned it to each step. A step is composed by the set of moves from one mandatory position to the next.
+At completion of each step we add the spare time to the next.
+To compute the execution time of a move we average its execution time in different situations.
+
+3 and 4 slide 45 sec
+To find the usable moves in a certain state we applied three constraints:
+
+Time constraint that Check if there is enough time remaining in this step.
+
+then Verify that Standing/Sitting preconditions are satisfied.
+
+Creativity Constraint checks if this move is different from the last five.
+
+Viable solution for a step is composed at least by 5 moves.
+we wanted to make sure that the choreography is diverse in each step. 
+To do so we implemented a function that computes the Entropy of the whole choreography based on Claude Shannon definition.
+During testing we tuned the entropy parameters for each step making tradeoffs between reliability and creativity.
+
+5 slide 30 sec
+The search strategy that we chose after few experiments is A*. On this slide you can see the simple heuristic that we used: the cost to reach the goal is the product between the number of remaining moves and the average time of our moves set. The Average time is a mean over the estimated time of execution for each move.
+
+Let's dance NAO
+video
